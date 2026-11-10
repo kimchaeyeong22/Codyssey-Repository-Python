@@ -176,3 +176,54 @@ JSON 파일을 이용하여 퀴즈 데이터와 최고 점수를 저장하고 �
 ### 로직 분리의 목적
 
 각 메서드가 담당하는 역할을 구분하여 코드의 가독성과 유지보수성을 높였습니다. 입력 검증, 게임 진행, 데이터 입출력을 각각의 책임에 맞게 관리하여 기능 수정과 확장이 쉽도록 구성했습니다.
+
+
+
+## Git Commit 규칙
+
+### 1. 커밋 단위 규정 (Commit Guidelines)
+
+작업 내용을 논리적으로 구분하여 작은 단위로 커밋한다.
+
+- 하나의 커밋에는 하나의 주요 작업만 포함한다.
+- 서로 관련 없는 변경 사항은 별도의 커밋으로 분리한다.
+- 기능 추가, 버그 수정, 문서 수정, 테스트 추가 등을 구분한다.
+- 프로그램이 정상적으로 동작하고 변경 사항을 확인한 후 커밋한다.
+- 불필요한 임시 파일이나 개인정보는 커밋하지 않는다.
+
+### 2. 커밋 메시지 작성 규칙 (Commit Message Convention)
+
+커밋 메시지는 다음 형식을 사용한다.
+
+**작성 형식**
+
+`<type>: <작업 내용>`
+
+**Type 종류**
+
+| Type | 설명 |
+|---|---|
+| feat | 새로운 기능 추가 |
+| fix | 오류 및 버그 수정 |
+| docs | 문서 수정 및 추가 |
+| test | 테스트 코드 추가 및 수정 |
+| refactor | 코드 구조 개선 |
+| style | 코드 형식 및 스타일 수정 |
+| chore | 설정 및 기타 작업 |
+
+### 3. 커밋 메시지 작성 예시
+
+```bash
+git commit -m "feat: Add quiz creation feature"
+git commit -m "fix: Fix score calculation error"
+git commit -m "docs: Update README.md"
+git commit -m "test: Add unit tests for quiz functionality"
+git commit -m "refactor: Improve quiz data handling"
+```
+
+### 4. 커밋 메시지 작성 시 주의사항
+
+- 작업 내용을 간결하고 명확하게 작성한다.
+- 메시지는 영어로 작성하는 것을 권장한다.
+- 변경 사항의 목적이 드러나도록 작성한다.
+- 의미 없는 메시지(예: update, 수정, test1)는 사용하지 않는다.
