@@ -94,3 +94,13 @@ https://github.com/kimchaeyeong22/Codyssey-Repository-Python.git
 * b225fd4 Update project files
 * 5230adb Add Quiz class
 * 1d9949f Update project files
+
+
+
+### 브랜치 생성 및 병합 실습
+
+- `feature/readme-improvements` 브랜치를 생성했습니다.
+- 해당 브랜치에서 README 개선 작업을 진행했습니다.
+- 작업 완료 후 `main` 브랜치에 Fast-forward 방식으로 병합했습니다.
+- `git log --oneline --graph --decorate --all` 명령어로 브랜치 및 커밋 이력을 확인했습니다.
+- 관련 실행 화면은 `screenshots/07_git_branch_merge_history.png`에 첨부했습니다.
