@@ -104,3 +104,16 @@ https://github.com/kimchaeyeong22/Codyssey-Repository-Python.git
 - 작업 완료 후 `main` 브랜치에 Fast-forward 방식으로 병합했습니다.
 - `git log --oneline --graph --decorate --all` 명령어로 브랜치 및 커밋 이력을 확인했습니다.
 - 관련 실행 화면은 `screenshots/07_git_branch_merge_history.png`에 첨부했습니다.
+
+
+
+### Git clone 및 pull 실습 증빙
+
+- `git clone` 명령어를 사용하여 GitHub 원격 저장소를 새로운 로컬 폴더에 복제했습니다.
+- 복제 결과 저장소 데이터 수신 및 변경 사항 처리가 정상적으로 완료되었습니다.
+- 복제한 저장소 폴더에서 `git pull origin main` 명령어를 실행했습니다.
+- `Already up to date.` 메시지를 확인하여 원격 저장소의 최신 변경 사항이 이미 반영되어 있음을 확인했습니다.
+
+**실행 증빙 스크린샷**
+- `screenshots/08_git_clone.png`: 원격 저장소 복제 실행 결과
+- `screenshots/09_git_pull.png`: 원격 저장소 변경 사항 가져오기 실행 결과
