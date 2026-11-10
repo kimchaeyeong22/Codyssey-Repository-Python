@@ -1,4 +1,6 @@
 import unittest
+from io import StringIO
+from unittest.mock import patch
 
 from quiz import Quiz
 from quiz_game import QuizGame
@@ -33,6 +35,12 @@ class TestQuiz(unittest.TestCase):
         quizzes = game.create_default_quizzes()
 
         self.assertGreaterEqual(len(quizzes), 5)
+
+    def test_quiz_display(self):
+        with patch("builtins.print") as mock_print:
+            self.quiz.display()
+
+        self.assertEqual(mock_print.call_count, 5)
 
 
 if __name__ == "__main__":
