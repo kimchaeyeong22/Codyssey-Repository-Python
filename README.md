@@ -75,3 +75,22 @@ python -m unittest -v
 
 - git clone을 사용하여 원격 저장소를 복제했습니다.
 - git pull을 사용하여 원격 저장소의 변경 사항을 가져오는 실습을 진행합니다.
+
+
+## 이하 추가 내용
+## GitHub 저장소 및 커밋 기록 
+https://github.com/kimchaeyeong22/Codyssey-Repository-Python.git
+### 커밋 기록
+* 8792999 (HEAD -> main, origin/main) Add new screenshots
+* 82bf234 Add new screenshots
+* f7debe9 Document git clone and pull practice
+* c44b9b3 Improve quiz display test assertions
+* 3b24403 Add type hints to Quiz class
+* 15d5cb9 Add quiz display test
+* b006649 Add unit tests for quiz functionality
+* 65346d0 Document automated tests
+* 8b6149b (feature/readme-improvements) Update project files
+* afb7410 Update project files
+* b225fd4 Update project files
+* 5230adb Add Quiz class
+* 1d9949f Update project files
