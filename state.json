@@ -1,0 +1,65 @@
+{
+    "quizzes": [
+        {
+            "question": "Python 파일의 기본 확장자는?",
+            "choices": [
+                ".html",
+                ".py",
+                ".css",
+                ".js"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "HTML의 주된 역할은?",
+            "choices": [
+                "웹 페이지 구조 작성",
+                "데이터베이스 관리",
+                "운영체제 실행",
+                "네트워크 연결"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Git의 주된 목적은?",
+            "choices": [
+                "이미지 편집",
+                "버전 관리",
+                "영상 재생",
+                "파일 압축"
+            ],
+            "answer": 2
+        },
+        {
+            "question": "다음 중 Python의 자료형이 아닌 것은?",
+            "choices": [
+                "int",
+                "str",
+                "list",
+                "html"
+            ],
+            "answer": 4
+        },
+        {
+            "question": "컴퓨터에서 CPU의 주요 역할은?",
+            "choices": [
+                "데이터 저장",
+                "화면 출력",
+                "명령어 처리",
+                "전원 공급"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "Python에서 화면에 글자를 출력할 때 사용하는 함수는?",
+            "choices": [
+                "input()",
+                "print()",
+                "len()",
+                "type()"
+            ],
+            "answer": 2
+        }
+    ],
+    "best_score": 5
+}
