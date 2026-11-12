@@ -468,6 +468,9 @@ git commit -m "refactor: Improve quiz data handling"'''
 - 주요 개발 작업: 프로젝트 초기 설정, Quiz 클래스 구현, 퀴즈 게임 기능 개발, 단위 테스트 작성, 테스트 개선, 문서화 및 Git 실습
 - 작업 이력은 Git 커밋 로그를 통해 확인할 수 있습니다.
 
+<img width="1725" height="1620" alt="커밋 갯수 10개 7" src="https://github.com/user-attachments/assets/9c28cebd-b181-4189-ae2b-5297acdc79ec" />
+
+
 ### 주요 개발 커밋
 
 ```
@@ -483,7 +486,12 @@ git commit -m "refactor: Improve quiz data handling"'''
 | `c44b9b3` | Improve quiz display test assertions | 퀴즈 출력 테스트 검증 개선 |
 | `f7debe9` | Document git clone and pull practice | Git clone 및 pull 실습 문서 작성 |
 | `44bffe5` | Update README.md | 프로젝트 README 문서 보완 |
+
 ```
+
+<img width="1045" height="787" alt="커밋 갯수 10개 4" src="https://github.com/user-attachments/assets/fd2506e5-a426-40da-89cc-b2382fdaecb3" />
+
+
 ### 전체 커밋 로그
 
 전체 커밋 이력은 저장소의 `git_commit_history.txt` 파일에 기록했습니다.
@@ -516,6 +524,8 @@ git commit -m "refactor: Improve quiz data handling"'''
 | `c44b9b3` | Improve quiz display test assertions | 테스트 검증 개선 |
 | `f7debe9` | Document git clone and pull practice | Git clone 및 pull 실습 문서 작성 |
 | `44bffe5` | Update README.md | 프로젝트 README 문서 수정 |
+
+
 
 ### 전체 Git 커밋 로그
 
