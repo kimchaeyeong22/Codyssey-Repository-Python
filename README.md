@@ -74,7 +74,10 @@ python -m unittest -v
 
 
 <img width="901" height="713" alt="03_main_menu" src="https://github.com/user-attachments/assets/3f8648b3-2f34-4b6c-ba3d-8878aa0d4a28" />
-<img width="1085" height="1045" alt="04_main_menu" src="https://github.com/user-attachments/assets/7fdcde04-f15e-45a0-9ca2-63c30cb9280e" />
+<img width="1085" height="1045" alt="04_main_menu" src="https://github.com/user-attachments/assets/7fdcde04-f15e-45a0-9ca2-63c30cb9280e" /> 
+```
+
+
 
 
 
@@ -89,7 +92,7 @@ python -m unittest -v
 ## 이하 추가 내용
 ## GitHub 저장소 및 커밋 기록 
 https://github.com/kimchaeyeong22/Codyssey-Repository-Python.git
-### 커밋 기록
+```### 커밋 기록
 * 8792999 (HEAD -> main, origin/main) Add new screenshots
 * 82bf234 Add new screenshots
 * f7debe9 Document git clone and pull practice
@@ -103,6 +106,7 @@ https://github.com/kimchaeyeong22/Codyssey-Repository-Python.git
 * b225fd4 Update project files
 * 5230adb Add Quiz class
 * 1d9949f Update project files
+```
 
 
 
@@ -212,6 +216,8 @@ JSON 파일을 이용하여 퀴즈 데이터와 최고 점수를 저장하고 �
 
 `<type>: <작업 내용>`
 
+```
+
 **Type 종류**
 
 | Type | 설명 |
@@ -223,6 +229,7 @@ JSON 파일을 이용하여 퀴즈 데이터와 최고 점수를 저장하고 �
 | refactor | 코드 구조 개선 |
 | style | 코드 형식 및 스타일 수정 |
 | chore | 설정 및 기타 작업 |
+```
 
 ### 3. 커밋 메시지 작성 예시
 
@@ -231,7 +238,7 @@ git commit -m "feat: Add quiz creation feature"
 git commit -m "fix: Fix score calculation error"
 git commit -m "docs: Update README.md"
 git commit -m "test: Add unit tests for quiz functionality"
-git commit -m "refactor: Improve quiz data handling"
+git commit -m "refactor: Improve quiz data handling"'''
 ```
 
 ## 클래스 사용 이유 및 객체지향 설계
