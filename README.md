@@ -457,3 +457,76 @@ git commit -m "refactor: Improve quiz data handling"'''
 기능별로 역할을 분리하여 요구사항 변경 시 관련된 부분만 수정하도록 설계한다.
 
 이를 통해 코드 중복을 줄이고 기존 기능에 대한 영향을 최소화하며, 새로운 기능을 추가할 때도 유지보수가 쉽도록 한다.
+
+
+
+## Git 커밋 이력 및 개발 진행 과정
+
+본 프로젝트는 개발 과정을 단계별로 기록하기 위해 Git을 사용했습니다.
+
+- 전체 커밋 수: **31개**
+- 주요 개발 작업: 프로젝트 초기 설정, Quiz 클래스 구현, 퀴즈 게임 기능 개발, 단위 테스트 작성, 테스트 개선, 문서화 및 Git 실습
+- 작업 이력은 Git 커밋 로그를 통해 확인할 수 있습니다.
+
+### 주요 개발 커밋
+
+```
+| 커밋 해시 | 커밋 메시지 | 실제 작업 내용 |
+|---|---|---|
+| `1d9949f` | Update project files | 프로젝트 기본 파일 및 .gitignore 구성 |
+| `5230adb` | Add Quiz class | Quiz 클래스 구현 |
+| `b225fd4` | Update project files | 메인 프로그램 및 퀴즈 게임 기능 구현 |
+| `65346d0` | Document automated tests | 자동화 테스트 문서 작성 |
+| `b006649` | Add unit tests for quiz functionality | 퀴즈 기능 단위 테스트 추가 |
+| `15d5cb9` | Add quiz display test | 퀴즈 출력 테스트 추가 |
+| `3b24403` | Add type hints to Quiz class | Quiz 클래스 타입 힌트 추가 |
+| `c44b9b3` | Improve quiz display test assertions | 퀴즈 출력 테스트 검증 개선 |
+| `f7debe9` | Document git clone and pull practice | Git clone 및 pull 실습 문서 작성 |
+| `44bffe5` | Update README.md | 프로젝트 README 문서 보완 |
+```
+### 전체 커밋 로그
+
+전체 커밋 이력은 저장소의 `git_commit_history.txt` 파일에 기록했습니다.
+
+확인 명령어:
+
+`git log --oneline --graph --decorate --all`
+
+위 명령어를 통해 전체 커밋과 브랜치 이력을 확인할 수 있습니다.
+
+## Git 커밋 이력 및 개발 진행 과정
+
+본 프로젝트는 Git을 활용하여 개발 과정을 단계별로 기록했습니다.
+
+- 전체 커밋 수: **31개**
+- 사용 브랜치: `main`, `feature/readme-improvements`
+- 주요 작업: 프로젝트 초기 설정, Quiz 클래스 구현, 게임 기능 개발, JSON 데이터 관리, 단위 테스트 작성, 테스트 개선, 문서화 및 Git 실습
+
+### 주요 개발 커밋
+
+| 커밋 해시 | 커밋 메시지 | 작업 내용 |
+|---|---|---|
+| `1d9949f` | Update project files | 프로젝트 기본 파일 및 .gitignore 구성 |
+| `5230adb` | Add Quiz class | Quiz 클래스 구현 |
+| `b225fd4` | Update project files | 메인 프로그램 및 퀴즈 게임 기능 구현 |
+| `65346d0` | Document automated tests | 자동화 테스트 문서 작성 |
+| `b006649` | Add unit tests for quiz functionality | 퀴즈 기능 단위 테스트 추가 |
+| `15d5cb9` | Add quiz display test | 퀴즈 출력 테스트 추가 |
+| `3b24403` | Add type hints to Quiz class | Quiz 클래스 타입 힌트 추가 |
+| `c44b9b3` | Improve quiz display test assertions | 테스트 검증 개선 |
+| `f7debe9` | Document git clone and pull practice | Git clone 및 pull 실습 문서 작성 |
+| `44bffe5` | Update README.md | 프로젝트 README 문서 수정 |
+
+### 전체 Git 커밋 로그
+
+전체 31개 커밋의 이력을 아래 파일에 별도로 저장했습니다.
+
+- [git_commit_history.txt](git_commit_history.txt)
+
+전체 로그 확인 명령어:
+
+`git log --oneline --graph --decorate --all`
+
+### 커밋 이력 확인 방법
+
+GitHub 저장소의 커밋 기록과 `git_commit_history.txt`를 통해 전체 커밋 개수와 개발 진행 과정을 확인할 수 있습니다.
