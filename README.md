@@ -30,6 +30,9 @@ python main.py
 5. **데이터 저장 및 불러오기**: 퀴즈와 최고 점수를 JSON 파일에 저장하고 다시 불러옵니다.
 6. **입력 오류 처리**: 빈 입력, 숫자가 아닌 입력, 범위를 벗어난 입력을 검사합니다.
 
+<img width="896" height="421" alt="01_main_menu" src="https://github.com/user-attachments/assets/2ef64e49-0b25-44a4-82dc-6120aa3ffc11" />
+
+
 ## 5. 파일 구조
 
 ```text
@@ -68,6 +71,12 @@ python -m unittest -v
 - 오답 판별 기능
 - 기본 퀴즈 개수 확인
 모든 테스트가 통과하면 OK 메시지가 출력됩니다.
+
+
+<img width="901" height="713" alt="03_main_menu" src="https://github.com/user-attachments/assets/3f8648b3-2f34-4b6c-ba3d-8878aa0d4a28" />
+<img width="1085" height="1045" alt="04_main_menu" src="https://github.com/user-attachments/assets/7fdcde04-f15e-45a0-9ca2-63c30cb9280e" />
+
+
 
 
 
@@ -117,6 +126,10 @@ https://github.com/kimchaeyeong22/Codyssey-Repository-Python.git
 **실행 증빙 스크린샷**
 - `screenshots/08_git_clone.png`: 원격 저장소 복제 실행 결과
 - `screenshots/09_git_pull.png`: 원격 저장소 변경 사항 가져오기 실행 결과
+
+<img width="2386" height="1393" alt="clone,pull 실습" src="https://github.com/user-attachments/assets/3151696e-87e4-4017-bf65-fa31b37fade5" />
+<img width="1804" height="1818" alt="clone,pull 실습 2" src="https://github.com/user-attachments/assets/f74f39d0-0faa-4990-b623-61e52732dd64" />
+
 
 
 ## 클래스 구성 및 역할
@@ -355,6 +368,11 @@ git commit -m "refactor: Improve quiz data handling"
 이를 통해 비정상적인 입력 중단 상황에서도 변경된 퀴즈와 최고 점수가 가능한 한 보존되도록 했습니다.
 
 ※ 저장 과정에서 파일 접근 오류가 발생하면 예외 처리 메시지를 출력합니다.
+
+
+<img width="790" height="584" alt="EOFError" src="https://github.com/user-attachments/assets/29794d7f-917c-48c8-9829-c000f1d968ed" />
+<img width="974" height="963" alt="JSON" src="https://github.com/user-attachments/assets/ba954368-c233-42ec-b471-6c8ba8469469" />
+
 
 
 ### 4. 백업 및 복구 시 주의사항
