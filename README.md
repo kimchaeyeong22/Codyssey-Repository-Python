@@ -556,6 +556,38 @@ git commit -m "refactor: Improve quiz data handling"'''
 
 전체 31개 커밋의 이력을 아래 파일에 별도로 저장했습니다.
 
+﻿* 049d116 (HEAD -> main, origin/main) Update project files
+* 44bffe5 Update README.md
+* cbc1a34 Update project files
+* a647e35 Update project files
+* cef35fd Add new screenshots
+* 74731f8 Update project files
+* 9c59711 Update project files
+* ead0388 Update project files
+* d8abb12 Update project files
+* 06b2130 Update project files
+* 24eb4d2 Update project files
+* 17d8c62 Update project files
+* 12cd68d Update project files
+* 2bb4a06 Add new screenshots
+* e8bb788 Update project files
+* 927dc64 Add new screenshots
+* 41964b6 Update project files
+* ff65e74 Add new screenshots
+* 8792999 Add new screenshots
+* 82bf234 Add new screenshots
+* f7debe9 Document git clone and pull practice
+* c44b9b3 Improve quiz display test assertions
+* 3b24403 Add type hints to Quiz class
+* 15d5cb9 Add quiz display test
+* b006649 Add unit tests for quiz functionality
+* 65346d0 Document automated tests
+* 8b6149b (feature/readme-improvements) Update project files
+* afb7410 Update project files
+* b225fd4 Update project files
+* 5230adb Add Quiz class
+* 1d9949f Update project files
+
 - [git_commit_history.txt](git_commit_history.txt)
 
 전체 로그 확인 명령어:
