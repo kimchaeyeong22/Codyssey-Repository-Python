@@ -55,6 +55,9 @@ python-quiz-game/
 
 프로그램을 처음 실행하면 기본 퀴즈 데이터가 생성됩니다. 이후 퀴즈를 추가하거나 점수가 갱신되면 데이터가 자동으로 저장됩니다.
 
+<img width="974" height="963" alt="JSON" src="https://github.com/user-attachments/assets/6575626f-7a4a-429b-a9e4-d06e8cbb68a5" />
+
+
 
 
 
@@ -147,6 +150,10 @@ https://github.com/kimchaeyeong22/Codyssey-Repository-Python.git
 - `display()` 메서드를 통해 질문과 선택지를 화면에 출력합니다.
 - `check_answer()` 메서드를 통해 사용자가 입력한 답이 정답인지 확인합니다.
 
+<img width="410" height="310" alt="스크린샷 2026-11-10 122709" src="https://github.com/user-attachments/assets/d2be587f-a603-4bae-ad44-20ba87b076b2" />
+
+
+
 ### 2. QuizGame 클래스 (`quiz_game.py`)
 
 - 퀴즈 게임 전체의 흐름을 관리하는 클래스입니다.
@@ -154,6 +161,13 @@ https://github.com/kimchaeyeong22/Codyssey-Repository-Python.git
 - 퀴즈 실행, 새 퀴즈 추가, 퀴즈 목록 출력, 최고 점수 확인 기능을 담당합니다.
 - JSON 파일을 이용해 퀴즈 데이터와 최고 점수를 저장하고 불러옵니다.
 - 사용자 메뉴 입력을 처리하고 프로그램의 실행 및 종료를 관리합니다.
+
+<img width="648" height="835" alt="스크린샷 2026-11-10 130406" src="https://github.com/user-attachments/assets/42238fb3-59ba-4d95-af76-0d2d2145407e" />
+<img width="548" height="824" alt="스크린샷 2026-11-10 130427" src="https://github.com/user-attachments/assets/a4214c09-890f-4c31-9355-4b67aaf8a50b" />
+<img width="563" height="765" alt="스크린샷 2026-11-10 130443" src="https://github.com/user-attachments/assets/82966eee-ecc7-45fc-895f-2c779331951f" />
+<img width="507" height="662" alt="스크린샷 2026-11-10 130456" src="https://github.com/user-attachments/assets/1089f5cc-e835-4444-9532-bcbc954b478c" />
+<img width="571" height="699" alt="스크린샷 2026-11-10 130516" src="https://github.com/user-attachments/assets/6bc7d8fa-09a0-46a8-b0c4-c936e9b7a5d1" />
+
 
 ### 클래스 간 관계
 
@@ -171,6 +185,9 @@ QuizGame은 여러 개의 Quiz 객체를 보유하고 활용합니다. Quiz는 �
 - `QuizGame.play_quiz()`: 정답 번호가 비어 있거나 숫자가 아닌 경우, 선택지 범위를 벗어난 경우 다시 입력하도록 처리합니다.
 - `QuizGame.add_quiz()`: 질문과 선택지의 빈 입력을 방지하고 정답 번호가 1~4 범위인지 검사합니다.
 
+<img width="220" height="458" alt="스크린샷 2026-11-10 131048" src="https://github.com/user-attachments/assets/d23d5a35-c92c-4680-ab45-e8173c57dcaf" />
+
+
 ### 2. 게임 진행 (Game Flow)
 
 퀴즈 실행과 사용자에게 제공되는 게임 기능을 관리합니다.
@@ -183,12 +200,20 @@ QuizGame은 여러 개의 Quiz 객체를 보유하고 활용합니다. Quiz는 �
 - `Quiz.display()`: 개별 퀴즈의 질문과 선택지를 출력합니다.
 - `Quiz.check_answer()`: 사용자의 답이 정답인지 확인합니다.
 
+<img width="329" height="794" alt="스크린샷 2026-11-10 131250" src="https://github.com/user-attachments/assets/0cc04cb0-d3c2-4541-97db-30cb5502efe4" />
+
+<img width="1117" height="1036" alt="스크린샷 2026-11-10 130546" src="https://github.com/user-attachments/assets/adb1a840-5093-4f63-a357-e16b18002179" />
+
+
 ### 3. 데이터 입출력 (Data I/O)
 
 JSON 파일을 이용하여 퀴즈 데이터와 최고 점수를 저장하고 불러옵니다.
 
 - `QuizGame.load_data()`: 프로그램 시작 시 `state.json` 파일을 읽어 퀴즈와 최고 점수를 불러옵니다. 파일이 없거나 데이터에 문제가 있으면 기본 퀴즈로 복구합니다.
 - `QuizGame.save_data()`: 현재 퀴즈 목록과 최고 점수를 JSON 형식으로 저장합니다.
+
+<img width="178" height="200" alt="스크린샷 2026-11-10 130850" src="https://github.com/user-attachments/assets/daedb0b5-023f-417c-a634-efe13ac34956" />
+
 
 ### 로직 분리의 목적
 
