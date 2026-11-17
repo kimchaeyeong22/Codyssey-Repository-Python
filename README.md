@@ -409,8 +409,8 @@ git commit -m "refactor: Improve quiz data handling"'''
 ```
 
 ## 8-2. GitHub 저장소 및 커밋 기록 
-https://github.com/kimchaeyeong22/Codyssey-Repository-Python.git
-``### 커밋 기록
+
+```### 커밋 기록
 * 8792999 (HEAD -> main, origin/main) Add new screenshots
 * 82bf234 Add new screenshots
 * f7debe9 Document git clone and pull practice
@@ -424,6 +424,7 @@ https://github.com/kimchaeyeong22/Codyssey-Repository-Python.git
 * b225fd4 Update project files
 * 5230adb Add Quiz class
 * 1d9949f Update project files
+```
 
 ### 8-3. 브랜치 생성 및 병합 실습
 
