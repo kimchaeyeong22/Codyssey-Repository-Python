@@ -554,8 +554,6 @@ git commit -m "refactor: Improve quiz data handling"'''
 
 ### 전체 Git 커밋 로그
 
-전체 31개 커밋의 이력을 아래 파일에 별도로 저장했습니다.
-
 ﻿* 049d116 (HEAD -> main, origin/main) Update project files
 * 44bffe5 Update README.md
 * cbc1a34 Update project files
