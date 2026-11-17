@@ -57,215 +57,6 @@ python-quiz-game/
 
 <img width="974" height="963" alt="JSON" src="https://github.com/user-attachments/assets/6575626f-7a4a-429b-a9e4-d06e8cbb68a5" />
 
-
-
-
-
-## 테스트 실행
-
-프로젝트에 포함된 자동 테스트를 실행하려면 터미널에서 다음 명령어를 입력합니다.
-
-```bash
-python -m unittest -v
-현재 다음 항목을 자동으로 검사합니다.
-- 퀴즈 질문 저장 여부
-- 선택지 개수 확인
-- 정답 판별 기능
-- 오답 판별 기능
-- 기본 퀴즈 개수 확인
-모든 테스트가 통과하면 OK 메시지가 출력됩니다.
-
-
-<img width="901" height="713" alt="03_main_menu" src="https://github.com/user-attachments/assets/3f8648b3-2f34-4b6c-ba3d-8878aa0d4a28" />
-<img width="1085" height="1045" alt="04_main_menu" src="https://github.com/user-attachments/assets/7fdcde04-f15e-45a0-9ca2-63c30cb9280e" /> 
-```
-
-
-
-
-
-
-
-## Git 실습 기록
-
-- git clone을 사용하여 원격 저장소를 복제했습니다.
-- git pull을 사용하여 원격 저장소의 변경 사항을 가져오는 실습을 진행합니다.
-
-
-## 이하 추가 내용
-## GitHub 저장소 및 커밋 기록 
-https://github.com/kimchaeyeong22/Codyssey-Repository-Python.git
-```### 커밋 기록
-* 8792999 (HEAD -> main, origin/main) Add new screenshots
-* 82bf234 Add new screenshots
-* f7debe9 Document git clone and pull practice
-* c44b9b3 Improve quiz display test assertions
-* 3b24403 Add type hints to Quiz class
-* 15d5cb9 Add quiz display test
-* b006649 Add unit tests for quiz functionality
-* 65346d0 Document automated tests
-* 8b6149b (feature/readme-improvements) Update project files
-* afb7410 Update project files
-* b225fd4 Update project files
-* 5230adb Add Quiz class
-* 1d9949f Update project files
-```
-
-
-
-### 브랜치 생성 및 병합 실습
-
-- `feature/readme-improvements` 브랜치를 생성했습니다.
-- 해당 브랜치에서 README 개선 작업을 진행했습니다.
-- 작업 완료 후 `main` 브랜치에 Fast-forward 방식으로 병합했습니다.
-- `git log --oneline --graph --decorate --all` 명령어로 브랜치 및 커밋 이력을 확인했습니다.
-- 관련 실행 화면은 `screenshots/07_git_branch_merge_history.png`에 첨부했습니다.
-
-
-
-### Git clone 및 pull 실습 증빙
-
-- `git clone` 명령어를 사용하여 GitHub 원격 저장소를 새로운 로컬 폴더에 복제했습니다.
-- 복제 결과 저장소 데이터 수신 및 변경 사항 처리가 정상적으로 완료되었습니다.
-- 복제한 저장소 폴더에서 `git pull origin main` 명령어를 실행했습니다.
-- `Already up to date.` 메시지를 확인하여 원격 저장소의 최신 변경 사항이 이미 반영되어 있음을 확인했습니다.
-
-**실행 증빙 스크린샷**
-- `screenshots/08_git_clone.png`: 원격 저장소 복제 실행 결과
-- `screenshots/09_git_pull.png`: 원격 저장소 변경 사항 가져오기 실행 결과
-
-<img width="2386" height="1393" alt="clone,pull 실습" src="https://github.com/user-attachments/assets/3151696e-87e4-4017-bf65-fa31b37fade5" />
-<img width="1804" height="1818" alt="clone,pull 실습 2" src="https://github.com/user-attachments/assets/f74f39d0-0faa-4990-b623-61e52732dd64" />
-
-
-
-## 클래스 구성 및 역할
-
-프로그램은 Quiz와 QuizGame 두 개의 클래스로 구성되어 있으며, 각 클래스가 서로 다른 책임을 담당하도록 분리했습니다.
-
-### 1. Quiz 클래스 (`quiz.py`)
-
-- 퀴즈 한 문제의 데이터를 관리하는 문제 모델 클래스입니다.
-- 질문(question), 선택지(choices), 정답(answer)을 저장합니다.
-- `display()` 메서드를 통해 질문과 선택지를 화면에 출력합니다.
-- `check_answer()` 메서드를 통해 사용자가 입력한 답이 정답인지 확인합니다.
-
-<img width="410" height="310" alt="스크린샷 2026-11-10 122709" src="https://github.com/user-attachments/assets/d2be587f-a603-4bae-ad44-20ba87b076b2" />
-
-
-
-### 2. QuizGame 클래스 (`quiz_game.py`)
-
-- 퀴즈 게임 전체의 흐름을 관리하는 클래스입니다.
-- 여러 Quiz 객체를 목록으로 관리합니다.
-- 퀴즈 실행, 새 퀴즈 추가, 퀴즈 목록 출력, 최고 점수 확인 기능을 담당합니다.
-- JSON 파일을 이용해 퀴즈 데이터와 최고 점수를 저장하고 불러옵니다.
-- 사용자 메뉴 입력을 처리하고 프로그램의 실행 및 종료를 관리합니다.
-
-<img width="648" height="835" alt="스크린샷 2026-11-10 130406" src="https://github.com/user-attachments/assets/42238fb3-59ba-4d95-af76-0d2d2145407e" />
-<img width="548" height="824" alt="스크린샷 2026-11-10 130427" src="https://github.com/user-attachments/assets/a4214c09-890f-4c31-9355-4b67aaf8a50b" />
-<img width="563" height="765" alt="스크린샷 2026-11-10 130443" src="https://github.com/user-attachments/assets/82966eee-ecc7-45fc-895f-2c779331951f" />
-<img width="507" height="662" alt="스크린샷 2026-11-10 130456" src="https://github.com/user-attachments/assets/1089f5cc-e835-4444-9532-bcbc954b478c" />
-<img width="571" height="699" alt="스크린샷 2026-11-10 130516" src="https://github.com/user-attachments/assets/6bc7d8fa-09a0-46a8-b0c4-c936e9b7a5d1" />
-
-
-### 클래스 간 관계
-
-QuizGame은 여러 개의 Quiz 객체를 보유하고 활용합니다. Quiz는 개별 문제의 데이터와 정답 확인을 담당하고, QuizGame은 이러한 Quiz 객체들을 이용해 전체 게임을 진행합니다.
-
-## 기능별 로직 분리 및 담당 메서드
-
-프로그램의 기능을 입력 검증, 게임 진행, 데이터 입출력의 세 영역으로 구분하여 각 메서드가 담당하는 역할을 명확하게 구성했습니다.
-
-### 1. 입력 검증 (Input Validation)
-
-사용자의 입력이 올바른 형식과 범위인지 확인합니다.
-
-- `QuizGame.run()`: 메뉴 번호의 빈 입력, 숫자가 아닌 입력, 1~5 범위를 벗어난 입력을 검사합니다.
-- `QuizGame.play_quiz()`: 정답 번호가 비어 있거나 숫자가 아닌 경우, 선택지 범위를 벗어난 경우 다시 입력하도록 처리합니다.
-- `QuizGame.add_quiz()`: 질문과 선택지의 빈 입력을 방지하고 정답 번호가 1~4 범위인지 검사합니다.
-
-<img width="220" height="458" alt="스크린샷 2026-11-10 131048" src="https://github.com/user-attachments/assets/d23d5a35-c92c-4680-ab45-e8173c57dcaf" />
-
-
-### 2. 게임 진행 (Game Flow)
-
-퀴즈 실행과 사용자에게 제공되는 게임 기능을 관리합니다.
-
-- `QuizGame.run()`: 메뉴를 출력하고 사용자가 선택한 기능을 실행합니다.
-- `QuizGame.play_quiz()`: 퀴즈를 순서대로 출제하고 정답을 확인하여 점수를 계산합니다.
-- `QuizGame.add_quiz()`: 새로운 퀴즈를 생성하고 목록에 추가합니다.
-- `QuizGame.list_quizzes()`: 등록된 퀴즈 목록을 출력합니다.
-- `QuizGame.show_best_score()`: 현재 최고 점수를 출력합니다.
-- `Quiz.display()`: 개별 퀴즈의 질문과 선택지를 출력합니다.
-- `Quiz.check_answer()`: 사용자의 답이 정답인지 확인합니다.
-
-<img width="329" height="794" alt="스크린샷 2026-11-10 131250" src="https://github.com/user-attachments/assets/0cc04cb0-d3c2-4541-97db-30cb5502efe4" />
-
-<img width="1117" height="1036" alt="스크린샷 2026-11-10 130546" src="https://github.com/user-attachments/assets/adb1a840-5093-4f63-a357-e16b18002179" />
-
-
-### 3. 데이터 입출력 (Data I/O)
-
-JSON 파일을 이용하여 퀴즈 데이터와 최고 점수를 저장하고 불러옵니다.
-
-- `QuizGame.load_data()`: 프로그램 시작 시 `state.json` 파일을 읽어 퀴즈와 최고 점수를 불러옵니다. 파일이 없거나 데이터에 문제가 있으면 기본 퀴즈로 복구합니다.
-- `QuizGame.save_data()`: 현재 퀴즈 목록과 최고 점수를 JSON 형식으로 저장합니다.
-
-<img width="178" height="200" alt="스크린샷 2026-11-10 130850" src="https://github.com/user-attachments/assets/daedb0b5-023f-417c-a634-efe13ac34956" />
-
-
-### 로직 분리의 목적
-
-각 메서드가 담당하는 역할을 구분하여 코드의 가독성과 유지보수성을 높였습니다. 입력 검증, 게임 진행, 데이터 입출력을 각각의 책임에 맞게 관리하여 기능 수정과 확장이 쉽도록 구성했습니다.
-
-
-
-## Git Commit 규칙
-
-### 1. 커밋 단위 규정 (Commit Guidelines)
-
-작업 내용을 논리적으로 구분하여 작은 단위로 커밋한다.
-
-- 하나의 커밋에는 하나의 주요 작업만 포함한다.
-- 서로 관련 없는 변경 사항은 별도의 커밋으로 분리한다.
-- 기능 추가, 버그 수정, 문서 수정, 테스트 추가 등을 구분한다.
-- 프로그램이 정상적으로 동작하고 변경 사항을 확인한 후 커밋한다.
-- 불필요한 임시 파일이나 개인정보는 커밋하지 않는다.
-
-### 2. 커밋 메시지 작성 규칙 (Commit Message Convention)
-
-커밋 메시지는 다음 형식을 사용한다.
-
-**작성 형식**
-
-`<type>: <작업 내용>`
-
-```
-
-**Type 종류**
-
-| Type | 설명 |
-|---|---|
-| feat | 새로운 기능 추가 |
-| fix | 오류 및 버그 수정 |
-| docs | 문서 수정 및 추가 |
-| test | 테스트 코드 추가 및 수정 |
-| refactor | 코드 구조 개선 |
-| style | 코드 형식 및 스타일 수정 |
-| chore | 설정 및 기타 작업 |
-```
-
-### 3. 커밋 메시지 작성 예시
-
-```bash
-git commit -m "feat: Add quiz creation feature"
-git commit -m "fix: Fix score calculation error"
-git commit -m "docs: Update README.md"
-git commit -m "test: Add unit tests for quiz functionality"
-git commit -m "refactor: Improve quiz data handling"'''
-```
-
 ## 클래스 사용 이유 및 객체지향 설계
 
 이 프로젝트는 객체지향 프로그래밍(OOP) 개념을 적용하여 `Quiz` 클래스와 `QuizGame` 클래스를 사용한다.
@@ -295,6 +86,38 @@ git commit -m "refactor: Improve quiz data handling"'''
 - 향후 새로운 게임 기능을 추가할 때 기존 클래스를 활용할 수 있다.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 7. 테스트 실행
+
+프로젝트에 포함된 자동 테스트를 실행하려면 터미널에서 다음 명령어를 입력합니다.
+
+```bash
+python -m unittest -v
+현재 다음 항목을 자동으로 검사합니다.
+- 퀴즈 질문 저장 여부
+- 선택지 개수 확인
+- 정답 판별 기능
+- 오답 판별 기능
+- 기본 퀴즈 개수 확인
+모든 테스트가 통과하면 OK 메시지가 출력됩니다.
+
+
+<img width="901" height="713" alt="03_main_menu" src="https://github.com/user-attachments/assets/3f8648b3-2f34-4b6c-ba3d-8878aa0d4a28" />
+<img width="1085" height="1045" alt="04_main_menu" src="https://github.com/user-attachments/assets/7fdcde04-f15e-45a0-9ca2-63c30cb9280e" /> 
+```
 
 ## 대량 데이터 처리 및 성능 최적화
 
@@ -431,60 +254,99 @@ git commit -m "refactor: Improve quiz data handling"'''
 
 
 
-## 요구사항 변경 시 수정 대상 및 영향 범위 (Change Impact Analysis)
-
-프로그램의 새로운 요구사항이 발생하면 관련 파일과 메서드를 확인하여 필요한 부분만 수정한다. 이를 통해 기존 기능에 미치는 영향을 최소화하고 유지보수성을 높인다.
-
-### 1. 기능별 수정 대상
-
-| 변경 요구사항 | 수정 대상 | 영향 범위 |
-|---|---|---|
-| 퀴즈 점수 계산 방식 변경 | `quiz_game.py`의 점수 계산 로직 | 퀴즈 결과 및 최고 점수 |
-| 퀴즈 데이터 구조 변경 | `quiz.py`의 `Quiz` 클래스 | 퀴즈 생성, 데이터 로딩 및 저장 |
-| 퀴즈 저장 방식 변경 | `quiz_game.py`의 `save_data()` | 데이터 저장 및 파일 관리 |
-| 퀴즈 불러오기 방식 변경 | `quiz_game.py`의 데이터 로딩 메서드 | 프로그램 초기화 및 데이터 복구 |
-| 퀴즈 진행 방식 변경 | `quiz_game.py`의 퀴즈 진행 관련 메서드 | 사용자 입력 및 퀴즈 결과 |
-| 새로운 퀴즈 기능 추가 | `quiz_game.py` 및 필요한 경우 `quiz.py` | 메뉴, 퀴즈 데이터 및 관련 기능 |
-
-### 2. 주요 변경 사항별 영향 분석
-
-**① 점수 계산 방식 변경**
-
-- 수정 대상: `quiz_game.py`의 점수 계산 로직
-- 영향 범위: 퀴즈 정답 판정, 최종 점수, 최고 점수 기록
-- 주의사항: 점수 계산 방식을 변경한 후 기존 최고 점수 저장 기능이 정상적으로 작동하는지 확인한다.
-
-**② 퀴즈 데이터 구조 변경**
-
-- 수정 대상: `quiz.py`의 `Quiz` 클래스
-- 영향 범위: 퀴즈 객체 생성, JSON 데이터 변환, 데이터 저장 및 불러오기
-- 주의사항: 데이터 구조를 변경하면 기존에 저장된 JSON 데이터와의 호환성을 확인해야 한다.
-
-**③ 데이터 저장 방식 변경**
-
-- 수정 대상: `quiz_game.py`의 `save_data()` 메서드 및 관련 데이터 로딩 메서드
-- 영향 범위: 퀴즈 데이터, 최고 점수, 데이터 백업 및 복구
-- 주의사항: 저장 형식이 변경되면 기존 데이터의 손실이나 호환성 문제가 발생하지 않도록 검증한다.
-
-### 3. 변경 작업 시 검증 절차
-
-요구사항 변경 후 다음 항목을 확인한다.
-
-1. 변경 대상 파일과 메서드를 확인한다.
-2. 수정으로 인해 영향을 받는 다른 기능을 파악한다.
-3. 기존 기능이 정상적으로 작동하는지 테스트한다.
-4. 데이터 저장 및 불러오기 기능을 검증한다.
-5. 점수 계산과 최고 점수 기록을 확인한다.
-6. 문제가 없으면 변경 사항을 Git에 커밋한다.
-
-### 4. 유지보수 및 확장성
-
-기능별로 역할을 분리하여 요구사항 변경 시 관련된 부분만 수정하도록 설계한다.
-
-이를 통해 코드 중복을 줄이고 기존 기능에 대한 영향을 최소화하며, 새로운 기능을 추가할 때도 유지보수가 쉽도록 한다.
 
 
 
+
+
+## 8. Git 실습 기록
+
+- git clone을 사용하여 원격 저장소를 복제했습니다.
+- git pull을 사용하여 원격 저장소의 변경 사항을 가져오는 실습을 진행합니다.
+
+## Git Commit 규칙
+
+### 1. 커밋 단위 규정 (Commit Guidelines)
+
+작업 내용을 논리적으로 구분하여 작은 단위로 커밋한다.
+
+- 하나의 커밋에는 하나의 주요 작업만 포함한다.
+- 서로 관련 없는 변경 사항은 별도의 커밋으로 분리한다.
+- 기능 추가, 버그 수정, 문서 수정, 테스트 추가 등을 구분한다.
+- 프로그램이 정상적으로 동작하고 변경 사항을 확인한 후 커밋한다.
+- 불필요한 임시 파일이나 개인정보는 커밋하지 않는다.
+
+### 2. 커밋 메시지 작성 규칙 (Commit Message Convention)
+
+커밋 메시지는 다음 형식을 사용한다.
+
+**작성 형식**
+
+`<type>: <작업 내용>`
+
+```
+
+**Type 종류**
+
+| Type | 설명 |
+|---|---|
+| feat | 새로운 기능 추가 |
+| fix | 오류 및 버그 수정 |
+| docs | 문서 수정 및 추가 |
+| test | 테스트 코드 추가 및 수정 |
+| refactor | 코드 구조 개선 |
+| style | 코드 형식 및 스타일 수정 |
+| chore | 설정 및 기타 작업 |
+```
+
+### 3. 커밋 메시지 작성 예시
+
+```bash
+git commit -m "feat: Add quiz creation feature"
+git commit -m "fix: Fix score calculation error"
+git commit -m "docs: Update README.md"
+git commit -m "test: Add unit tests for quiz functionality"
+git commit -m "refactor: Improve quiz data handling"'''
+```
+
+## GitHub 저장소 및 커밋 기록 
+https://github.com/kimchaeyeong22/Codyssey-Repository-Python.git
+```### 커밋 기록
+* 8792999 (HEAD -> main, origin/main) Add new screenshots
+* 82bf234 Add new screenshots
+* f7debe9 Document git clone and pull practice
+* c44b9b3 Improve quiz display test assertions
+* 3b24403 Add type hints to Quiz class
+* 15d5cb9 Add quiz display test
+* b006649 Add unit tests for quiz functionality
+* 65346d0 Document automated tests
+* 8b6149b (feature/readme-improvements) Update project files
+* afb7410 Update project files
+* b225fd4 Update project files
+* 5230adb Add Quiz class
+* 1d9949f Update project files
+
+### 브랜치 생성 및 병합 실습
+
+- `feature/readme-improvements` 브랜치를 생성했습니다.
+- 해당 브랜치에서 README 개선 작업을 진행했습니다.
+- 작업 완료 후 `main` 브랜치에 Fast-forward 방식으로 병합했습니다.
+- `git log --oneline --graph --decorate --all` 명령어로 브랜치 및 커밋 이력을 확인했습니다.
+- 관련 실행 화면은 `screenshots/07_git_branch_merge_history.png`에 첨부했습니다.
+
+### Git clone 및 pull 실습 증빙
+
+- `git clone` 명령어를 사용하여 GitHub 원격 저장소를 새로운 로컬 폴더에 복제했습니다.
+- 복제 결과 저장소 데이터 수신 및 변경 사항 처리가 정상적으로 완료되었습니다.
+- 복제한 저장소 폴더에서 `git pull origin main` 명령어를 실행했습니다.
+- `Already up to date.` 메시지를 확인하여 원격 저장소의 최신 변경 사항이 이미 반영되어 있음을 확인했습니다.
+
+**실행 증빙 스크린샷**
+- `screenshots/08_git_clone.png`: 원격 저장소 복제 실행 결과
+- `screenshots/09_git_pull.png`: 원격 저장소 변경 사항 가져오기 실행 결과
+
+<img width="2386" height="1393" alt="clone,pull 실습" src="https://github.com/user-attachments/assets/3151696e-87e4-4017-bf65-fa31b37fade5" />
+<img width="1804" height="1818" alt="clone,pull 실습 2" src="https://github.com/user-attachments/assets/f74f39d0-0faa-4990-b623-61e52732dd64" />
 
 ## Git 커밋 이력 및 개발 진행 과정
 
@@ -558,3 +420,157 @@ git commit -m "refactor: Improve quiz data handling"'''
 ### 커밋 이력 확인 방법
 
 GitHub 저장소의 커밋 기록과 `git_commit_history.txt`를 통해 전체 커밋 개수와 개발 진행 과정을 확인할 수 있습니다.
+
+
+
+## 9. 유지 보수 및 향후 개선 계획
+## 요구사항 변경 시 수정 대상 및 영향 범위 (Change Impact Analysis)
+
+프로그램의 새로운 요구사항이 발생하면 관련 파일과 메서드를 확인하여 필요한 부분만 수정한다. 이를 통해 기존 기능에 미치는 영향을 최소화하고 유지보수성을 높인다.
+
+### 1. 기능별 수정 대상
+
+| 변경 요구사항 | 수정 대상 | 영향 범위 |
+|---|---|---|
+| 퀴즈 점수 계산 방식 변경 | `quiz_game.py`의 점수 계산 로직 | 퀴즈 결과 및 최고 점수 |
+| 퀴즈 데이터 구조 변경 | `quiz.py`의 `Quiz` 클래스 | 퀴즈 생성, 데이터 로딩 및 저장 |
+| 퀴즈 저장 방식 변경 | `quiz_game.py`의 `save_data()` | 데이터 저장 및 파일 관리 |
+| 퀴즈 불러오기 방식 변경 | `quiz_game.py`의 데이터 로딩 메서드 | 프로그램 초기화 및 데이터 복구 |
+| 퀴즈 진행 방식 변경 | `quiz_game.py`의 퀴즈 진행 관련 메서드 | 사용자 입력 및 퀴즈 결과 |
+| 새로운 퀴즈 기능 추가 | `quiz_game.py` 및 필요한 경우 `quiz.py` | 메뉴, 퀴즈 데이터 및 관련 기능 |
+
+### 2. 주요 변경 사항별 영향 분석
+
+**① 점수 계산 방식 변경**
+
+- 수정 대상: `quiz_game.py`의 점수 계산 로직
+- 영향 범위: 퀴즈 정답 판정, 최종 점수, 최고 점수 기록
+- 주의사항: 점수 계산 방식을 변경한 후 기존 최고 점수 저장 기능이 정상적으로 작동하는지 확인한다.
+
+**② 퀴즈 데이터 구조 변경**
+
+- 수정 대상: `quiz.py`의 `Quiz` 클래스
+- 영향 범위: 퀴즈 객체 생성, JSON 데이터 변환, 데이터 저장 및 불러오기
+- 주의사항: 데이터 구조를 변경하면 기존에 저장된 JSON 데이터와의 호환성을 확인해야 한다.
+
+**③ 데이터 저장 방식 변경**
+
+- 수정 대상: `quiz_game.py`의 `save_data()` 메서드 및 관련 데이터 로딩 메서드
+- 영향 범위: 퀴즈 데이터, 최고 점수, 데이터 백업 및 복구
+- 주의사항: 저장 형식이 변경되면 기존 데이터의 손실이나 호환성 문제가 발생하지 않도록 검증한다.
+
+### 3. 변경 작업 시 검증 절차
+
+요구사항 변경 후 다음 항목을 확인한다.
+
+1. 변경 대상 파일과 메서드를 확인한다.
+2. 수정으로 인해 영향을 받는 다른 기능을 파악한다.
+3. 기존 기능이 정상적으로 작동하는지 테스트한다.
+4. 데이터 저장 및 불러오기 기능을 검증한다.
+5. 점수 계산과 최고 점수 기록을 확인한다.
+6. 문제가 없으면 변경 사항을 Git에 커밋한다.
+
+### 4. 유지보수 및 확장성
+
+기능별로 역할을 분리하여 요구사항 변경 시 관련된 부분만 수정하도록 설계한다.
+
+이를 통해 코드 중복을 줄이고 기존 기능에 대한 영향을 최소화하며, 새로운 기능을 추가할 때도 유지보수가 쉽도록 한다.
+
+
+
+## 이하 추가 내용
+
+
+
+
+
+
+
+
+
+
+
+## 클래스 구성 및 역할
+
+프로그램은 Quiz와 QuizGame 두 개의 클래스로 구성되어 있으며, 각 클래스가 서로 다른 책임을 담당하도록 분리했습니다.
+
+### 1. Quiz 클래스 (`quiz.py`)
+
+- 퀴즈 한 문제의 데이터를 관리하는 문제 모델 클래스입니다.
+- 질문(question), 선택지(choices), 정답(answer)을 저장합니다.
+- `display()` 메서드를 통해 질문과 선택지를 화면에 출력합니다.
+- `check_answer()` 메서드를 통해 사용자가 입력한 답이 정답인지 확인합니다.
+
+<img width="410" height="310" alt="스크린샷 2026-11-10 122709" src="https://github.com/user-attachments/assets/d2be587f-a603-4bae-ad44-20ba87b076b2" />
+
+
+
+### 2. QuizGame 클래스 (`quiz_game.py`)
+
+- 퀴즈 게임 전체의 흐름을 관리하는 클래스입니다.
+- 여러 Quiz 객체를 목록으로 관리합니다.
+- 퀴즈 실행, 새 퀴즈 추가, 퀴즈 목록 출력, 최고 점수 확인 기능을 담당합니다.
+- JSON 파일을 이용해 퀴즈 데이터와 최고 점수를 저장하고 불러옵니다.
+- 사용자 메뉴 입력을 처리하고 프로그램의 실행 및 종료를 관리합니다.
+
+<img width="648" height="835" alt="스크린샷 2026-11-10 130406" src="https://github.com/user-attachments/assets/42238fb3-59ba-4d95-af76-0d2d2145407e" />
+<img width="548" height="824" alt="스크린샷 2026-11-10 130427" src="https://github.com/user-attachments/assets/a4214c09-890f-4c31-9355-4b67aaf8a50b" />
+<img width="563" height="765" alt="스크린샷 2026-11-10 130443" src="https://github.com/user-attachments/assets/82966eee-ecc7-45fc-895f-2c779331951f" />
+<img width="507" height="662" alt="스크린샷 2026-11-10 130456" src="https://github.com/user-attachments/assets/1089f5cc-e835-4444-9532-bcbc954b478c" />
+<img width="571" height="699" alt="스크린샷 2026-11-10 130516" src="https://github.com/user-attachments/assets/6bc7d8fa-09a0-46a8-b0c4-c936e9b7a5d1" />
+
+
+### 클래스 간 관계
+
+QuizGame은 여러 개의 Quiz 객체를 보유하고 활용합니다. Quiz는 개별 문제의 데이터와 정답 확인을 담당하고, QuizGame은 이러한 Quiz 객체들을 이용해 전체 게임을 진행합니다.
+
+## 기능별 로직 분리 및 담당 메서드
+
+프로그램의 기능을 입력 검증, 게임 진행, 데이터 입출력의 세 영역으로 구분하여 각 메서드가 담당하는 역할을 명확하게 구성했습니다.
+
+### 1. 입력 검증 (Input Validation)
+
+사용자의 입력이 올바른 형식과 범위인지 확인합니다.
+
+- `QuizGame.run()`: 메뉴 번호의 빈 입력, 숫자가 아닌 입력, 1~5 범위를 벗어난 입력을 검사합니다.
+- `QuizGame.play_quiz()`: 정답 번호가 비어 있거나 숫자가 아닌 경우, 선택지 범위를 벗어난 경우 다시 입력하도록 처리합니다.
+- `QuizGame.add_quiz()`: 질문과 선택지의 빈 입력을 방지하고 정답 번호가 1~4 범위인지 검사합니다.
+
+<img width="220" height="458" alt="스크린샷 2026-11-10 131048" src="https://github.com/user-attachments/assets/d23d5a35-c92c-4680-ab45-e8173c57dcaf" />
+
+
+### 2. 게임 진행 (Game Flow)
+
+퀴즈 실행과 사용자에게 제공되는 게임 기능을 관리합니다.
+
+- `QuizGame.run()`: 메뉴를 출력하고 사용자가 선택한 기능을 실행합니다.
+- `QuizGame.play_quiz()`: 퀴즈를 순서대로 출제하고 정답을 확인하여 점수를 계산합니다.
+- `QuizGame.add_quiz()`: 새로운 퀴즈를 생성하고 목록에 추가합니다.
+- `QuizGame.list_quizzes()`: 등록된 퀴즈 목록을 출력합니다.
+- `QuizGame.show_best_score()`: 현재 최고 점수를 출력합니다.
+- `Quiz.display()`: 개별 퀴즈의 질문과 선택지를 출력합니다.
+- `Quiz.check_answer()`: 사용자의 답이 정답인지 확인합니다.
+
+<img width="329" height="794" alt="스크린샷 2026-11-10 131250" src="https://github.com/user-attachments/assets/0cc04cb0-d3c2-4541-97db-30cb5502efe4" />
+
+<img width="1117" height="1036" alt="스크린샷 2026-11-10 130546" src="https://github.com/user-attachments/assets/adb1a840-5093-4f63-a357-e16b18002179" />
+
+
+### 3. 데이터 입출력 (Data I/O)
+
+JSON 파일을 이용하여 퀴즈 데이터와 최고 점수를 저장하고 불러옵니다.
+
+- `QuizGame.load_data()`: 프로그램 시작 시 `state.json` 파일을 읽어 퀴즈와 최고 점수를 불러옵니다. 파일이 없거나 데이터에 문제가 있으면 기본 퀴즈로 복구합니다.
+- `QuizGame.save_data()`: 현재 퀴즈 목록과 최고 점수를 JSON 형식으로 저장합니다.
+
+<img width="178" height="200" alt="스크린샷 2026-11-10 130850" src="https://github.com/user-attachments/assets/daedb0b5-023f-417c-a634-efe13ac34956" />
+
+
+### 로직 분리의 목적
+
+각 메서드가 담당하는 역할을 구분하여 코드의 가독성과 유지보수성을 높였습니다. 입력 검증, 게임 진행, 데이터 입출력을 각각의 책임에 맞게 관리하여 기능 수정과 확장이 쉽도록 구성했습니다.
+
+
+
+
+
