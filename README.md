@@ -285,7 +285,6 @@ python -m unittest -v
 `<type>: <작업 내용>`
 
 ```
-
 **Type 종류**
 
 | Type | 설명 |
@@ -311,7 +310,7 @@ git commit -m "refactor: Improve quiz data handling"'''
 
 ## GitHub 저장소 및 커밋 기록 
 https://github.com/kimchaeyeong22/Codyssey-Repository-Python.git
-```### 커밋 기록
+``### 커밋 기록
 * 8792999 (HEAD -> main, origin/main) Add new screenshots
 * 82bf234 Add new screenshots
 * f7debe9 Document git clone and pull practice
@@ -360,6 +359,7 @@ https://github.com/kimchaeyeong22/Codyssey-Repository-Python.git
 
 ### 주요 개발 커밋
 
+```
 | 커밋 해시 | 커밋 메시지 | 작업 내용 |
 |---|---|---|
 | `1d9949f` | Update project files | 프로젝트 기본 파일 및 .gitignore 구성 |
@@ -372,11 +372,13 @@ https://github.com/kimchaeyeong22/Codyssey-Repository-Python.git
 | `c44b9b3` | Improve quiz display test assertions | 테스트 검증 개선 |
 | `f7debe9` | Document git clone and pull practice | Git clone 및 pull 실습 문서 작성 |
 | `44bffe5` | Update README.md | 프로젝트 README 문서 수정 |
+```
 
 
 
 ### 전체 Git 커밋 로그
 
+```
 ﻿* 049d116 (HEAD -> main, origin/main) Update project files
 * 44bffe5 Update README.md
 * cbc1a34 Update project files
@@ -408,6 +410,7 @@ https://github.com/kimchaeyeong22/Codyssey-Repository-Python.git
 * b225fd4 Update project files
 * 5230adb Add Quiz class
 * 1d9949f Update project files
+```
 
 <img width="1045" height="787" alt="커밋 갯수 10개 4" src="https://github.com/user-attachments/assets/fd2506e5-a426-40da-89cc-b2382fdaecb3" />
 
@@ -430,6 +433,7 @@ GitHub 저장소의 커밋 기록과 `git_commit_history.txt`를 통해 전체 �
 
 ### 1. 기능별 수정 대상
 
+```
 | 변경 요구사항 | 수정 대상 | 영향 범위 |
 |---|---|---|
 | 퀴즈 점수 계산 방식 변경 | `quiz_game.py`의 점수 계산 로직 | 퀴즈 결과 및 최고 점수 |
@@ -438,6 +442,7 @@ GitHub 저장소의 커밋 기록과 `git_commit_history.txt`를 통해 전체 �
 | 퀴즈 불러오기 방식 변경 | `quiz_game.py`의 데이터 로딩 메서드 | 프로그램 초기화 및 데이터 복구 |
 | 퀴즈 진행 방식 변경 | `quiz_game.py`의 퀴즈 진행 관련 메서드 | 사용자 입력 및 퀴즈 결과 |
 | 새로운 퀴즈 기능 추가 | `quiz_game.py` 및 필요한 경우 `quiz.py` | 메뉴, 퀴즈 데이터 및 관련 기능 |
+```
 
 ### 2. 주요 변경 사항별 영향 분석
 
@@ -543,6 +548,7 @@ QuizGame은 여러 개의 Quiz 객체를 보유하고 활용합니다. Quiz는 �
 
 퀴즈 실행과 사용자에게 제공되는 게임 기능을 관리합니다.
 
+```
 - `QuizGame.run()`: 메뉴를 출력하고 사용자가 선택한 기능을 실행합니다.
 - `QuizGame.play_quiz()`: 퀴즈를 순서대로 출제하고 정답을 확인하여 점수를 계산합니다.
 - `QuizGame.add_quiz()`: 새로운 퀴즈를 생성하고 목록에 추가합니다.
@@ -550,6 +556,7 @@ QuizGame은 여러 개의 Quiz 객체를 보유하고 활용합니다. Quiz는 �
 - `QuizGame.show_best_score()`: 현재 최고 점수를 출력합니다.
 - `Quiz.display()`: 개별 퀴즈의 질문과 선택지를 출력합니다.
 - `Quiz.check_answer()`: 사용자의 답이 정답인지 확인합니다.
+```
 
 <img width="329" height="794" alt="스크린샷 2026-11-10 131250" src="https://github.com/user-attachments/assets/0cc04cb0-d3c2-4541-97db-30cb5502efe4" />
 
@@ -559,9 +566,10 @@ QuizGame은 여러 개의 Quiz 객체를 보유하고 활용합니다. Quiz는 �
 ### 3. 데이터 입출력 (Data I/O)
 
 JSON 파일을 이용하여 퀴즈 데이터와 최고 점수를 저장하고 불러옵니다.
-
+```
 - `QuizGame.load_data()`: 프로그램 시작 시 `state.json` 파일을 읽어 퀴즈와 최고 점수를 불러옵니다. 파일이 없거나 데이터에 문제가 있으면 기본 퀴즈로 복구합니다.
 - `QuizGame.save_data()`: 현재 퀴즈 목록과 최고 점수를 JSON 형식으로 저장합니다.
+```
 
 <img width="178" height="200" alt="스크린샷 2026-11-10 130850" src="https://github.com/user-attachments/assets/daedb0b5-023f-417c-a634-efe13ac34956" />
 
