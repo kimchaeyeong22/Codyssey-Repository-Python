@@ -365,7 +365,7 @@ python -m unittest -v
 - git clone을 사용하여 원격 저장소를 복제했습니다.
 - git pull을 사용하여 원격 저장소의 변경 사항을 가져오는 실습을 진행합니다.
 
-## 8-1. Git Commit 규칙
+### 8-1. Git Commit 규칙
 
 ### 8-1-1. 커밋 단위 규정 (Commit Guidelines)
 
@@ -448,7 +448,9 @@ git commit -m "refactor: Improve quiz data handling"'''
 <img width="2386" height="1393" alt="clone,pull 실습" src="https://github.com/user-attachments/assets/3151696e-87e4-4017-bf65-fa31b37fade5" />
 <img width="1804" height="1818" alt="clone,pull 실습 2" src="https://github.com/user-attachments/assets/f74f39d0-0faa-4990-b623-61e52732dd64" />
 
-## 8-5. Git 커밋 이력 및 개발 진행 과정
+## 8-5.
+
+## 8-6. Git 커밋 이력 및 개발 진행 과정
 
 본 프로젝트는 Git을 활용하여 개발 과정을 단계별로 기록했습니다.
 
@@ -458,7 +460,7 @@ git commit -m "refactor: Improve quiz data handling"'''
 
   <img width="1725" height="1620" alt="커밋 갯수 10개 7" src="https://github.com/user-attachments/assets/9c28cebd-b181-4189-ae2b-5297acdc79ec" />
 
-### 8-5-1. 주요 개발 커밋
+### 8-6-1. 주요 개발 커밋
 
 ```
 | 커밋 해시 | 커밋 메시지 | 작업 내용 |
@@ -477,7 +479,7 @@ git commit -m "refactor: Improve quiz data handling"'''
 
 
 
-### 8-6. 전체 Git 커밋 로그
+### 8-7. 전체 Git 커밋 로그
 
 ```
 ﻿* 049d116 (HEAD -> main, origin/main) Update project files
@@ -521,7 +523,7 @@ git commit -m "refactor: Improve quiz data handling"'''
 
 `git log --oneline --graph --decorate --all`
 
-### 8-7. 커밋 이력 확인 방법
+### 8-8. 커밋 이력 확인 방법
 
 GitHub 저장소의 커밋 기록과 `git_commit_history.txt`를 통해 전체 커밋 개수와 개발 진행 과정을 확인할 수 있습니다.
 
