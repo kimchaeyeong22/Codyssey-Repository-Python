@@ -448,7 +448,34 @@ git commit -m "refactor: Improve quiz data handling"'''
 <img width="2386" height="1393" alt="clone,pull 실습" src="https://github.com/user-attachments/assets/3151696e-87e4-4017-bf65-fa31b37fade5" />
 <img width="1804" height="1818" alt="clone,pull 실습 2" src="https://github.com/user-attachments/assets/f74f39d0-0faa-4990-b623-61e52732dd64" />
 
-## 8-5.
+## 8-5. README 파일 확인 및 인코딩 문제 해결
+
+Git으로 복제한 프로젝트 폴더에서 README.md 파일의 내용을 확인하기 위해 PowerShell의 Get-Content 명령어를 사용했습니다.
+
+Get-Content .\README.md
+
+처음에는 기본 인코딩 설정으로 파일을 읽어 한글이 깨져 출력되는 현상이 발생했습니다. 이는 파일의 실제 인코딩과 PowerShell이 파일을 읽는 방식이 일치하지 않아 발생한 문제입니다.
+
+이를 해결하기 위해 파일의 인코딩을 UTF-8로 명시하여 다시 확인했습니다.
+
+Get-Content .\README.md -Encoding UTF8
+
+그 결과 README 파일의 한글 내용이 정상적으로 출력되는 것을 확인했습니다.
+
+확인 사항
+
+Git으로 복제한 프로젝트 폴더에서 README 파일에 접근할 수 있는지 확인
+
+PowerShell의 Get-Content 명령어를 이용한 파일 내용 출력
+
+UTF-8 인코딩 지정에 따른 한글 출력 문제 해결
+
+**실행 증빙 스크린샷**
+
+<img width="1657" height="1747" alt="인코딩 문제 해결" src="https://github.com/user-attachments/assets/2ccbb3c2-60d6-48ea-b372-f7d7d5df9cdf" />
+<img width="1429" height="1756" alt="인코딩 문제 해결 2" src="https://github.com/user-attachments/assets/9889a2f9-bef5-4445-9d35-d8eea6448382" />
+
+
 
 ## 8-6. Git 커밋 이력 및 개발 진행 과정
 
