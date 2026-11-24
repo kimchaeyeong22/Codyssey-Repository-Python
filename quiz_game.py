@@ -125,25 +125,32 @@ class QuizGame:
         score = 0
 
         for quiz in self.quizzes:
-            quiz.display()
+    quiz.display()
 
-            while True:
-                try:
-                    user_answer = input("정답 번호를 입력하세요: ").strip()
+    while True:
+        user_answer = input("정답 번호를 입력하세요: ").strip()
 
-                    if not user_answer:
-                        print("답을 입력하세요.")
-                        continue
+        if not user_answer:
+            print("답을 입력하세요.")
+            continue
 
-                    user_answer = int(user_answer)
+        try:
+            user_answer = int(user_answer)
+        except ValueError:
+            print("숫자만 입력하세요.")
+            continue
 
-                    if 1 <= user_answer <= len(quiz.choices):
-                        break
+        if not 1 <= user_answer <= len(quiz.choices):
+            print(f"1부터 {len(quiz.choices)} 사이의 숫자를 입력하세요.")
+            continue
 
-                    print(f"1부터 {len(quiz.choices)} 사이의 숫자를 입력하세요.")
+        break
 
-                except ValueError:
-                    print("숫자만 입력하세요.")
+    if quiz.check_answer(user_answer):
+        print("정답입니다!")
+        score += 1
+    else:
+        print(f"오답입니다. 정답은 {quiz.answer}번입니다.")
 
             if quiz.check_answer(user_answer):
                 print("정답입니다!")
